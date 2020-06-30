@@ -2,7 +2,6 @@
 
 <html lang="en">
   <head>
-    <title>Counselor - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="description" content="{% block description %}   {{ setting.description}}  {% endblock %}">
     <meta name="keywords" content="{% block keywords %}   {{ setting.keywords}}  {% endblock %}">
@@ -39,8 +38,8 @@
 					<div class="col-md-6 d-flex justify-content-md-end">
 						<div class="social-media">
 			    		<p class="mb-0 d-flex">
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+	                <li class="ftco-animate"><a href="https://www.facebook.com/diamond.containerpool"><span class="fa fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/shipping_containerpool_factory/?igshid=9wge54z5m8nt"><span class="fa fa-instagram"></span></a></li>
 			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
 			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
 			    		</p>
@@ -52,16 +51,16 @@
 
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><img src="{% static 'website/images/logo/logos.png' %}" alt="">Mod Pools</a>
+	      <a class="navbar-brand" href="index.html"><img src="{% static 'website/images/logo/logos.png' %}" alt="">ModPools</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="/home/" class="nav-link">Home</a></li>
+	          <li class="nav-item active"><a href="/homes/" class="nav-link">Home</a></li>
 	          <li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="/FAQ/" class="nav-link">Counselor</a></li>
+	          <li class="nav-item"><a href="/faq/" class="nav-link">FAQ</a></li>
 	          <li class="nav-item"><a href="/gallery/" class="nav-link">Services</a></li>
 	          <li class="nav-item"><a href="/pricing/" class="nav-link">Pricing</a></li>
 	          <li class="nav-item"><a href="/contact/" class="nav-link">Contact</a></li>
@@ -84,7 +83,7 @@
         <div class="row mb-5">
           <div class="col-sm-12 col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2 logo"><a href="#"><img src="{% static 'website/images/logo/logos.png' %}" alt="">Mod Pools</a></h2>
+              <h2 class="ftco-heading-2 logo"><a href="#"><img src="{% static 'website/images/logo/logos.png' %}" alt="">ModPools</a></h2>
               <p>We are more than amazing.</p>
               <ul class="ftco-footer-social list-unstyled mt-2">
                 <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -131,6 +130,7 @@
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
+                      <div class="elfsight-app-a7a69e50-b6c0-4191-8874-fb90af2e2338"></div>
 	                <li><span class="icon fa fa-map marker"></span><span class="text"{{ setting.address }}</span></li>
 	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">{{ setting.phone }}/span></a></li>
 	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">{{ setting.email }}</span></a></li>
@@ -171,14 +171,33 @@
     	   <!-- WOW JS -->
     <script src="{% static 'website/js/wow/wow.min.js' %}"></script>
 
-<script>
-    $( function() {
-        $( "#accordion" ).accordion({
-            collapsible: true
-        });
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script>
 
-    } );
-</script>
+        $( function() {
+            $( "#accordion" ).accordion({
+                collapsible: true
+            });
+
+        } );
+    </script>
+
+                       <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/5efb23fd9e5f69442291939a/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+
 
 
   </body>
