@@ -1,0 +1,642 @@
+{% load static %}
+
+<html lang="en">
+  <head>
+    <title>Counselor - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="description" content="{% block description %}   {{ setting.description}}  {% endblock %}">
+    <meta name="keywords" content="{% block keywords %}   {{ setting.keywords}}  {% endblock %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}   {{ setting.title}}  {% endblock %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'website/css/animate.css' %} ">
+	     <!-- magnific-popup CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/magnific-popup/magnific-popup.css' %} ">
+	    <link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}" media="screen" />
+
+    <link rel="stylesheet" href="{% static 'website/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'website/css/flaticon.css' %}">
+	  <link rel="stylesheet" href="{% static 'website/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+  </head>
+  <body>
+
+  	<div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 d-flex align-items-center">
+						<p class="mb-0 phone pl-md-2">
+							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> {{ setting.phone }}</a>
+							<a href="#"><span class="fa fa-paper-plane mr-1"></span> {{ setting.email }}</a>
+						</p>
+					</div>
+					<div class="col-md-6 d-flex justify-content-md-end">
+						<div class="social-media">
+			    		<p class="mb-0 d-flex">
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+			    		</p>
+		        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"><img src="{% static 'website/images/logo/logos.png' %}" alt="">Mod Pools</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="/home/" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="/FAQ/" class="nav-link">Counselor</a></li>
+	          <li class="nav-item"><a href="/gallery/" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="/pricing/" class="nav-link">Pricing</a></li>
+	          <li class="nav-item"><a href="/contact/" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+
+
+	  <div class="hero-wrap" style="background-image: url('{% static 'website/images/new/hero.png' %}');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center">
+          <div class="col-md-6 ftco-animate d-flex align-items-end">
+          	<div class="text w-100">
+	            <h1 class="mb-4">Welcome to Mod Pools</h1>
+	            <p class="mb-4">An in-demand option, a secure pool cover traps in heat, conserves water, and protects your pool from debris and unwanted access..</p>
+	            <p><a href="#" class="btn btn-primary py-3 px-4">Contact us</a> <a href="#" class="btn btn-white py-3 px-4">Read more</a></p>
+            </div>
+          </div>
+          <video href="{% static 'website/images/bann-vid' %}" class="img-video popup-vimeo d-flex align-items-center justify-content-center">
+          	<span class="fa fa-play"></span>
+          </video>
+        </div>
+      </div>
+    </div>
+
+{% if message_name %}
+<center>
+    <h2>Thanks {{ message_name }}!</h2>
+    <p>We recieved your email and will respond shortly....</p>
+</center>
+
+{% endif %}
+
+
+    <section class="ftco-intro">
+    	<div class="container">
+    		<div class="row no-gutters">
+    			<div class="col-md-4 d-flex">
+    				<div class="intro aside-stretch d-lg-flex w-100">
+    					<div class="icon">
+    						<span class="flaticon-checklist"></span>
+    					</div>
+    					<div class="text">
+    						<h2>We hand select our shipping containers</h2>
+    						<p>Single trip shipping containers are practically in mint condition. They have a marine grade epoxy applied to both the interior and the exterior along with a treated plywood floor..</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4 d-flex">
+    				<div class="intro color-1 d-lg-flex w-100">
+    					<div class="icon">
+    						<span class="flaticon-employee"></span>
+    					</div>
+    					<div class="text">
+    						<h2>Reinforced Rim</h2>
+    						<p>We strengthen the entire pool by adding a steel rim after cutting the container down to height. This gives us the smooth, clean edge around the perimeter of the pool..</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4 d-flex">
+    				<div class="intro color-2 d-lg-flex w-100">
+    					<div class="icon">
+    						<span class="flaticon-umbrella"></span>
+    					</div>
+    					<div class="text">
+    						<h2>Superior Liner</h2>
+    						<p>We line our Trek Pools with a specially blended spray on system, approved and used through the pool industry for over a decade. A clear top coat finish protects against chemicals and UV damage. The liner waterproofs and protects the interior of the pool..</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+		<section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">Services</span>
+            <h2>How It Works</h2>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
+    				<div class="services-2 text-center">
+    					<div class="icon-wrap">
+    						<div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
+	    					<div class="icon d-flex align-items-center justify-content-center">
+	    						<span class="flaticon-calendar"></span>
+	    					</div>
+    					</div>
+    					<h2>Make Schedule</h2>
+    					<p>contact us through our live chat to make and appointment or fell free to call text us  we are open 24/24.</p>
+    				</div>
+    			</div>
+    			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
+    				<div class="services-2 text-center">
+    					<div class="icon-wrap">
+    						<div class="number d-flex align-items-center justify-content-center"><span>02</span></div>
+	    					<div class="icon d-flex align-items-center justify-content-center">
+	    						<span class="flaticon-qa"></span>
+	    					</div>
+    					</div>
+    					<h2>Start Discussion</h2>
+  						<p>disucuss with our managers and designers on exactly what you want...</p>
+    				</div>
+    			</div>
+    			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
+    				<div class="services-2 text-center">
+    					<div class="icon-wrap">
+    						<div class="number d-flex align-items-center justify-content-center"><span>03</span></div>
+	    					<div class="icon d-flex align-items-center justify-content-center">
+	    						<span class="flaticon-checklist"></span>
+	    					</div>
+    					</div>
+    					<h2>Order your 20Foot or 40Foot</h2>
+  						<p>PLace your order now!</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url('{% static 'website/images/new/ser-1.png' %}');">
+					</div>
+					<div class="col-md-6 wrap-about px-md-5 ftco-animate py-5 bg-light">
+	          <div class="heading-section">
+	          	<span class="subheading">Welcome to Mod Container Pools</span>
+	            <h2 class="mb-4">Is a Shipping Container Pool Right for You?.</h2>
+
+	            <p>Shipping containers come in two sizes: 8 feet by 20 feet and 8 feet by 40 feet. Some manufacturers of shipping container pools cut the container's length down to 12 feet for a more space-friendly option..</p>
+	            <p>A shipping container pool is more than just a shipping container filled with water. The manufacturer goes through an expensive conversion process.
+
+Typically, they weld another layer of steel inside the corrugated steel walls to make the shipping container watertight from the inside. That second layer of steel adds a great amount of weight to the pool..</p>
+
+	            <a href="https://vimeo.com/45830194" class="play-video popup-vimeo d-flex align-items-center mt-4">
+	            	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-play"></span></div>
+	            	<span class="watch">Watch Our Consultant Video</span>
+	            </a>
+	          </div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+          	<span class="subheading">Our Services</span>
+            <h2 class="mb-3">Is a Shipping Container Pool Right for You?</h2>
+          </div>
+        </div>
+				<div class="row tabulation mt-4 ftco-animate">
+  				<div class="col-md-4">
+						<ul class="nav nav-pills nav-fill d-md-flex d-block flex-column">
+						  <li class="nav-item text-left">
+						    <a class="nav-link active py-4" data-toggle="tab" href="#services-1">Sizing</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-2">The Inside Surface</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-3">Installation</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-4">The Cover</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-5">The Swim</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-6">Other Uses</a>
+						  </li>
+						</ul>
+					</div>
+					<div class="col-md-8">
+						<div class="tab-content">
+						  <div class="tab-pane container p-0 active" id="services-1">
+						  	<div class="img" style="background-image: url({% static 'website/images/new/ser-1.png' %});"></div>
+						  	<h3><a href="#">Sizing</a></h3>
+						  	<p>Shipping containers come in two sizes: 8 feet by 20 feet and 8 feet by 40 feet. Some manufacturers of shipping container pools cut the container's length down to 12 feet for a more space-friendly option.</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-2">
+						  	<div class="img" style="background-image: url({% static 'website/images/new/ser-2.png' %});"></div>
+						  	<h3><a href="#">The Inside Surface</a></h3>
+						  	<p>Some shipping container pools are then lined with a fiberglass shell. These pools raise the same concerns as traditional fiberglass pools: so-called "spider cracks" can develop in the surface, and like any surface damage, cracked fiberglass is difficult and expensive to repair.</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-3">
+						  	<div class="img" style="background-image: url({% static 'website/images/new/ser-3.png' %});"></div>
+						  	<h3><a href="#">Installation</a></h3>
+						  	<p>A shipping container pool must be lowered into place by a crane. Unless you're getting a custom-trimmed container, it will need to be lowered onto an outdoor space that's 20- to 40-feet long. Endless Pools Fitness Systems are installed the same way and require 20-feet maximum, with less space required for most models. </p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-4">
+						  	<div class="img" style="background-image: url({% static 'website/images/new/ser-4.png' %});"></div>
+						  	<h3><a href="#">The Cover</a></h3>
+						  	<p>An in-demand option, a secure pool cover traps in heat, conserves water, and protects your pool from debris and unwanted access.</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-5">
+						  	<div class="img" style="background-image: url({% static 'website/images/new/ser-5.png' %});"></div>
+						  	<h3><a href="#">The Swim</a></h3>
+						  	<p>A 20-foot or 40-foot shipping container pool occupies a big chunk of outdoor real estate, and still, you can only swim a short lap before you must flip-turn at the wall. The longest shipping container pool is still less than half the length of a 'short course' competition pool!</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-6">
+						  	<div class="img" style="background-image: url({% static 'website/images/new/ser-6.png' %});"></div>
+						  	<h3><a href="#">Other Uses</a></h3>
+						  	<p>Shipping container pools can be great for family fun. For aquatic exercise, water running, and physical therapy, they're limited by the single depth; for 20- and 40-foot models, the water is about 4.5 feet deep.</p>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+			<section class="ftco-section" id="work">
+			<div class="container">
+				<div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+          	<span class="subheading">Our Gallery</span>
+            <h2 class="mb-3">LOOOOOOOOOOK!</h2>
+          </div>
+
+ <div class="container-fluid p-0">
+
+                <div class="row no-gutters wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="img-wrapper">
+                            <a class="gallery__pic" href="{% static 'website/images/new/ser-1.png' %}" title="Work Description Goes Here">
+                                <img src="{% static 'website/images/new/ser-1.png' %}" class="img-fluid" alt="Work" style="min-width: 100%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="img-wrapper">
+                            <a class="gallery__pic" href="{% static 'website/images/new/ser-2.png' %}" title="Work Description Goes Here">
+                                <img src="{% static 'website/images/new/ser-2.png' %}" class="img-fluid" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="img-wrapper">
+                            <a class="gallery__pic" href="{% static 'website/images/new/ser-3.png' %}" title="Work Description Goes Here">
+                                <img src="{% static 'website/images/new/ser-3.png' %}" class="img-fluid" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="img-wrapper">
+                            <a class="gallery__pic" href="{% static 'website/images/new/ser-4.png' %}" title="Work Description Goes Here">
+                                <img src="{% static 'website/images/new/ser-4.png' %}" class="img-fluid" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="img-wrapper">
+                            <a class="gallery__pic" href="{% static 'website/images/new/ser-5.png' %}" title="Work Description Goes Here">
+                                <img src="{% static 'website/images/new/ser-5.png' %}" class="img-fluid" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="img-wrapper">
+                            <a class="gallery__pic" href="{% static 'website/images/new/ser-6.png' %}" title="Work Description Goes Here">
+                                <img src="{% static 'website/images/new/ser-6.png' %}" class="img-fluid" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="img-wrapper">
+                            <a class="gallery__pic" href="{% static 'website/images/new/ser-7.png' %}" title="Work Description Goes Here">
+                                <img src="{% static 'website/images/new/ser-7.png' %}" class="img-fluid" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="img-wrapper">
+                            <a class="gallery__pic" href="{% static 'website/images/new/ser-8.png' %}" title="Work Description Goes Here">
+                                <img src="{% static 'website/images/new/ser-8.png' %}" class="img-fluid" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+		<section class="ftco-section bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">Price &amp; Plans</span>
+            <h2>Affordable Packages</h2>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-4 ftco-animate d-flex">
+	          <div class="block-7 w-100">
+	            <div class="text-center">
+		            <span class="price"><sup>$</sup> <span class="number">25000</span> <sub></sub></span>
+		            <span class="excerpt d-block">8 feet by 20 feet
+</span>
+		            <ul class="pricing-text mb-5">
+		             <li><span class="fa fa-check mr-2"></span>Trek Pool Stair Design with 2 side benches</li>
+		              <li><span class="fa fa-check mr-2"></span>Interior Trek Pool Liner System</li>
+		              <li><span class="fa fa-check mr-2"></span>Exterior Marine Grade Trek Pool Coating System</li>
+		              <li><span class="fa fa-check mr-2"></span>2 Color Changing LED lights</li>
+		              <li><span class="fa fa-check mr-2"></span>Cartridge Filter</li>
+		              <li><span class="fa fa-check mr-2"></span>Ultra Violet Sanitizer</li>
+		              <li><span class="fa fa-check mr-2"></span>All Schedule 40 connections and fittings</li>
+		            </ul>
+
+		            <a href="/pricing/" class="btn btn-primary d-block px-2 py-3">Order Your 20 Foot Now!</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-md-4 ftco-animate d-flex">
+	          <div class="block-7 w-100">
+	            <div class="text-center">
+		            <span class="price"><sup>$</sup> <span class="number">45000</span> <sub></sub></span>
+		            <span class="excerpt d-block">8 feet by 40 feet
+</span>
+		            <ul class="pricing-text mb-5">
+		              <li><span class="fa fa-check mr-2"></span>Trek Pool Stair Design with 2 side benches</li>
+		              <li><span class="fa fa-check mr-2"></span>Interior Trek Pool Liner System</li>
+		              <li><span class="fa fa-check mr-2"></span>Exterior Marine Grade Trek Pool Coating System</li>
+		              <li><span class="fa fa-check mr-2"></span>2 Color Changing LED lights</li>
+		              <li><span class="fa fa-check mr-2"></span>Cartridge Filter</li>
+		              <li><span class="fa fa-check mr-2"></span>Ultra Violet Sanitizer</li>
+		              <li><span class="fa fa-check mr-2"></span>All Schedule 40 connections and fittings</li>
+
+		            </ul>
+
+		            <a href="/pricing/" class="btn btn-primary d-block px-2 py-3">Order Your 40 Foot Now!</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-md-4 ftco-animate d-flex">
+	          <div class="block-7 w-100">
+	            <div class="text-center">
+		            <span class="price"><sup>$</sup> <span class="number">35000</span> <sub></sub></span>
+		            <span class="excerpt d-block">8 feet by 30 feet</span>
+		            <ul class="pricing-text mb-5">
+		              <li><span class="fa fa-check mr-2"></span>Trek Pool Stair Design with 2 side benches</li>
+		              <li><span class="fa fa-check mr-2"></span>Interior Trek Pool Liner System</li>
+		              <li><span class="fa fa-check mr-2"></span>Exterior Marine Grade Trek Pool Coating System</li>
+		              <li><span class="fa fa-check mr-2"></span>2 Color Changing LED lights</li>
+		              <li><span class="fa fa-check mr-2"></span>Cartridge Filter</li>
+		              <li><span class="fa fa-check mr-2"></span>Ultra Violet Sanitizer</li>
+		              <li><span class="fa fa-check mr-2"></span>All Schedule 40 connections and fittings</li>
+		            </ul>
+
+		            <a href="/pricing/" class="btn btn-primary d-block px-2 py-3">Order Your 30 Foot Now!</a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+    	</div>
+    </section>
+
+		<section class="ftco-appointment ftco-section img" style="background-image: url({% static 'website/images/bg_2.jpg' %});">
+			<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6 half ftco-animate">
+    				<h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
+    				<form action="{% url 'home' %}" class="appointment">
+						 {% csrf_token %}
+    					<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+			              <input type="text" class="form-control" name="message-name" placeholder="Your Name">
+			            </div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			              <input type="email" class="form-control" name="message-email" placeholder="Email">
+			            </div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+			    					<div class="form-field">
+	          					<div class="select-wrap">
+	                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
+	                      <select name="message-order" id="" class="form-control">
+	                      	<option value="">Services</option>
+	                        <option value="">Order</option>
+	                        <option value="">Pricing</option>
+	                        <option value="">Custom Order</option>
+	                        <option value="">Orther</option>
+	                      </select>
+	                    </div>
+			              </div>
+			    				</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+			              <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+			            </div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+			              <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
+			            </div>
+								</div>
+    					</div>
+	          </form>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <footer class="ftco-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+               <h2 class="ftco-heading-2 logo"><a href="#"><img src="{% static 'website/images/logo/logos.png' %}" alt="">Mod Pools</a></h2>
+              <p>We are more than amazing.</p>
+              <ul class="ftco-footer-social list-unstyled mt-2">
+                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Explore</h2>
+              <ul class="list-unstyled">
+                <li><a href="/about/"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
+                <li><a href="/contact/"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+                <li><a href="/faq/"><span class="fa fa-chevron-right mr-2"></span>What We Do</a></li>
+                <li><a href="/pricing/"><span class="fa fa-chevron-right mr-2"></span>Plans &amp; Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Legal</h2>
+              <ul class="list-unstyled">
+                <li><a href="/homes/"><span class="fa fa-chevron-right mr-2"></span>Join us</a></li>
+                <li><a href="/about/"><span class="fa fa-chevron-right mr-2"></span>Privacy &amp; Policy</a></li>
+                <li><a href="/faq/"><span class="fa fa-chevron-right mr-2"></span>FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Company</h2>
+              <ul class="list-unstyled">
+                <li><a href="/about/"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
+                <li><a href="/faq/"><span class="fa fa-chevron-right mr-2"></span>FAQ</a></li>
+                <li><a href="/contact/"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+1(813)421-0561</span></a></li>
+	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">Modpoolsofficial69@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <script src="{% static 'website/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'website/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'website/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'website/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'website/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'website/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'website/js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'website/js/google-map.js' %}"></script>
+  <script src="{% static 'website/js/main.js' %}"></script>
+	   <!-- WOW JS -->
+    <script src="{% static 'website/js/wow/wow.min.js' %}"></script>
+	    <!-- magnific-popup JS -->
+    <script src="{% static 'website/js/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+	    <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
+	    <!-- easing -->
+    <script src="{% static 'website/js/easing/jquery.easing.1.3.js' %}"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<script>
+    $( function() {
+        $( "#accordion" ).accordion({
+            collapsible: true
+        });
+
+    } );
+</script>
+   <script>
+       $(document).ready(function() {
+          $('.gallery__pic').magnificPopup({
+             type: 'image',
+             gallery:{enabled:true},
+            removalDelay: 300,       // Delay in milliseconds before popup is removed
+             mainClass: 'mfp-fade'   // Class that is added to popup wrapper and background
+             // other options
+          });
+       });
+    </script>
+
+ <script>
+       $(document).ready(function() {
+          $('.gallery__pic').magnificPopup({
+             type: 'image',
+             gallery:{enabled:true},
+             removalDelay: 300,       // Delay in milliseconds before popup is removed
+             mainClass: 'mfp-fade'   // Class that is added to popup wrapper and background
+          });
+       });
+    <script>
+  </body>
+</html>
