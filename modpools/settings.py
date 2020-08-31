@@ -153,7 +153,7 @@ CKEDITOR_CONFIGS = {
 }
 
 
-EMAIL_HOST_USER = 'Modpoolsofficial69@gmail.com'
+EMAIL_HOST_USER = 'modpoolsofficial69@gmail.com'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
