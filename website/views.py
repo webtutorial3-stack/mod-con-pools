@@ -18,7 +18,7 @@ def homes(request):
             message_name,
             message,
             message_email,
-            ['Modpoolsofficial69@gmail.com'],
+            ['modpoolsofficial69@gmail.com'],
         )
 
         return render(request, 'home.html', {'message_name': message_name})
